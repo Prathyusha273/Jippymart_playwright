@@ -61,10 +61,7 @@ export class AdminUsersPage {
         await this.role23.check();
         await this.role24.check();
         await this.role23.uncheck();
-        await this.role24.uncheck();
-
-        
-// await this.saveRoleButton.click()
+      
     }
 
     async saveRole() {
