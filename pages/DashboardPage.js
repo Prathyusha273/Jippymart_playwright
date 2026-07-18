@@ -7,6 +7,7 @@ export class DashboardPage {
         this.accessControl = page.getByText('Access Control');
         this.roles = page.getByText('Roles');
         this.adminUsers = page.getByText('Admin Users');
+        this.logoutButton = page.getByText('Logout');
     }
 
     async openRoles() {
@@ -16,6 +17,11 @@ export class DashboardPage {
 
     async openAdminUsers() {
         await this.accessControl.click();
+
+        
         await this.adminUsers.click();
+    }
+      async logout() {
+        await this.logoutButton.click();
     }
 }
