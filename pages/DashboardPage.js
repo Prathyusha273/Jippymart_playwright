@@ -16,9 +16,9 @@ export class DashboardPage {
     }
 
     async openAdminUsers() {
-        await this.accessControl.click();
+        await this.accessControl.click();   
+        await this.roles.click();
 
-        
         await this.adminUsers.click();
     }
       async logout() {
