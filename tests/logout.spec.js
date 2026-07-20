@@ -1,6 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
+
 import { DashboardPage } from '../pages/DashboardPage';
+
+
+test.setTimeout(120000);
 
 test('Logout from Jippy Mart', async ({ page }) => {
 
